@@ -1,16 +1,10 @@
-var sec=60;
+function count() {
+  if (Number(timer.textContent) > 0) {
+    timer.textContent--;
+    setTimeout(count, 1000);
+  } else {
+    alert("Вы победили в конкурсе");
+  }
+}
 
-function refresh()
-{
-	sec--;
-if(sec==-01){sec=60}
-else{sec=sec;}
-	time = sec;
-	if(document.getElementById){timer.innerHTML=time;}
-	inter=setTimeout("refresh()", 1000);
-if(sec=='00'){
-		sec="00";
-		clearInterval(inter);
-	alert('Вы победили!');
-}
-}
+count();
