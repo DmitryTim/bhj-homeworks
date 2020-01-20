@@ -56,4 +56,3 @@ function loadCurrency() {
 }
 
 loadCurrency();
-© 2020 GitHub, Inc.
